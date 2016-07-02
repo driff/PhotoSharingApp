@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/appbar_padding_top">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutHeader"
+        android:layout_marginBottom="@dimen/appbar_padding_top"
+        android:layout_alignParentTop="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/avatar_size_list"
+            android:layout_height="@dimen/avatar_size_list"
+            android:layout_marginRight="@dimen/appbar_padding_top"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txtUser"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:layout_toEndOf="@+id/imgAvatar" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgMain"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/layoutHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:id="@+id/txtPlace"
+        android:layout_below="@+id/imgMain"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_share"
+        android:background="@android:color/transparent"
+        android:id="@+id/imgShare"
+        android:tint="@color/colorAccent"
+        android:layout_toLeftOf="@+id/imgDelete"
+        android:layout_alignBottom="@+id/imgDelete"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/colorAccent"
+        android:background="@android:color/transparent"
+        android:id="@+id/imgDelete"
+        android:layout_below="@+id/txtPlace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

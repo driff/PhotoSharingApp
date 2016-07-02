@@ -1,0 +1,31 @@
+<resources>
+
+    <!--Login Activity Strings-->
+
+    <string name="app_name">PhotoFeed</string>
+    <string name="login.message.email">eMail</string>
+    <string name="login.message.password">Password</string>
+    <string name="login.button.signin">Sign in</string>
+    <string name="login.button.signup">Sign up</string>
+    <string name="login.error.message.signup">Impossible to create a new user right now. %s</string>
+    <string name="login.error.message.signin">Impossible to sign you in %s</string>
+    <string name="login.notice.message.useradded">User successfully created</string>
+
+    <!--Main Activity Strings-->
+
+    <string name="main.title.list">Photos</string>
+    <string name="main.title.map">Map</string>
+    <string name="main.notice.upload.init">Processing Photo</string>
+    <string name="main.notice.upload.complete">Photo published successfully!</string>
+    <string name="main.error.dispatch.camera">Error creating photo file</string>
+    <string name="main.error.location.unavailable">Impossible to get location</string>
+    <string name="main.menu.action.logout">Logout</string>
+    <string name="main.message.picture.source">Choose a photo</string>
+
+    <!--PhotoListFragment Strings-->
+    <string name="photolist.message.share">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
